@@ -36,7 +36,7 @@ class VoiceProcessor {
 
   /// Singleton getter for VoiceProcessor that delivers frames of size
   /// [frameLenth] and at a sample rate of [sampleRate]
-  static getVoiceProcessor(int frameLength, int sampleRate) {
+  static VoiceProcessor getVoiceProcessor(int frameLength, int sampleRate) {
     if (_instance == null) {
       _instance = new VoiceProcessor._(frameLength, sampleRate);
     } else {
